@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="style/jquerymobile1_0_min.css" />
+    <link rel="stylesheet" href="style/app.css" />
+    <script src="scripts/jquery1_7_min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/jquerymobile1_0_min.js"></script>
+    <title>Tartan-Jagd!</title>
+  </head>
+<body>
+
+<div id="booths" data-role="page">
+      <div data-role="header">
+        <h1>Tartan-Jagd!</h1>
+      </div>
+
+      <div data-role="content">
+        <div data-role="collapsible" data-collapsed="false" data-content-theme="c">
+          <h3>Spielregeln</h3>
+        <p>Willkommen beim Schottland-Kongress und zur Tartan-Jagd! Bei unserer Tartan-Jagd können Sie mit Loch Air eine fünftägige All-Inclusive-Reise für zwei Personen nach Edinburgh gewinnen.</p>
+        <p><strong>Ziel des Spiels:</strong> Besuchen Sie die Stände der unten aufgeführten Sponsoren und suchen die dort ausgestellten Tartan-Muster. Sie werden aufgefordert ein Foto des Musters aufzunehmen. Wenn Sie alle 12 Tartans gefunden haben, begeben Sie sich zu Stand C930 in Halle 5, um sich für die Verlosung eintragen zu lassen.</p>
+        </div>
+        <ul data-role="listview" data-inset="true" id="vendors">
+          <li id="vendor-cailean"><h3>C340</h3>
+          <img src="images/barclay.png" alt="Barclay" />
+          <p><strong>Cailean Netzwerk-Design</strong></p>
+          <p>Kategorie: <strong>Daten und Netzwerke</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>4</strong></p>
+            <ul id="cailean" class="details">
+            <li><strong>Cailean Netzwerk-Design</strong></li>
+            <li>Halle <strong>4</strong>, Stand <strong>C340</strong></li>
+            <li><img src="images/barclay.png" alt="Barclay" />Dass Sie Ihren Kunden und Angestellten die Sicherheit Ihrer Online-Anwendungen und Daten garantieren können, ist der wichtigste Schlüssel zu wirtschaftlichem Erfolg. Die Bewältigung möglicher Netzwerk- und Server-Überlastungen und ein geeigneter Notfallplan sind für einen reaktionsfähigen, befriedigenden und stets erreichbaren Kundendienst von entscheidender Bedeutung. Fordern Sie noch heute bei uns eine kostenlose Netzwerkanalyse an.</li>
+            <li><a class="foundTartan" id="found-cailean" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+          
+          
+          <li id="vendor-eilionoir"><h3>C120</h3>
+          <img src="images/buchanan.png" alt="Buchanan" />
+          <p><strong>Eilionoir Grund und Boden</strong></p>
+          <p>Kategorie: <strong>Stadtplanung</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>3</strong></p>
+            <ul id="eilionoir" class="details">
+            <li><strong>Eilionoir Grund und Boden</strong></li>
+            <li>Halle <strong>3</strong>, Stand <strong>C120</strong></li>
+            <li><img src="images/buchanan.png" alt="Buchanan" />Wir bieten Beratung für die Entwicklungsplannung und Flächengestaltung. Wir wirken als Entwickler in Landschafts- und Gebäudeprojekten mit.</li>
+            <li><a class="foundTartan" id="found-eilionoir" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+          
+          <li id="vendor-keir"><h3>C220</h3>
+          <img src="images/douglas_green.png" alt="Douglas Green" />
+          <p><strong>Keir Software</strong></p>
+          <p>Kategorie: <strong>Software-Entwicklung</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>2</strong></p>
+            <ul id="keir" class="details">
+            <li><strong>Keir Software</strong></li>
+            <li>Halle <strong>2</strong>, Stand <strong>C220</strong></li>
+            <li><img src="images/douglas_green.png" alt="Douglas Green" />Keir Software (KS) ist ein professionelles Software-Haus, das Sie unterstützen und Ihr Partner werden will. KS steht seit über 35 Jahren für die Berücksichtigung von Kundenwünschen, das Eingehen auf Projekt und Software-Anforderungen und die zeitgerechte und kostengünstige Entwicklung und Auslieferungen von Software-Lösungen.</li>
+            <li><a class="foundTartan" id="found-keir" data-role="button">Gefunden!</a></li>
+          </ul>
+          </li>
+          
+          <li id="vendor-scotland-united"><h3>C460</h3>
+          <img src="images/galloway.png" alt="Galloway" />
+          <p><strong>Schottisch und sparsam</strong></p>
+          <p>Kategorie: <strong>Finanzdienstleistungen</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>4</strong></p>
+            <ul id="scotland-united" class="details">
+            <li><strong>Schottisch und sparsam</strong></li>
+            <li>Halle <strong>4</strong>, Stand <strong>C460</strong></li>
+            <li><img src="images/galloway.png" alt="Galloway" />Schottisch und sparsam ist ein führendes privates Finanzunternehmen. Es wurde 1857 gegründet und betreibt 24 Zweigstellen in ganz Schottland. Wir bieten Privatkredite für Autos, Entschuldungspläne und andere Kreditprodukte.</li>
+            <li><a class="foundTartan" id="found-scotland-united" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+          
+          <li id="vendor-attack"><h3>C170</h3>
+          <img src="images/morgan.png" alt="Morgan" />
+          <p><strong>Tartan Attack!</strong></p>
+          <p>Kategorie: <strong>Software-Entwicklung</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>4</strong></p>
+            <ul id="attack" class="details">
+            <li><strong>Tartan Attack!</strong></li>
+            <li>Halle <strong>4</strong>, Stand <strong>C170</strong></li>
+            <li><img src="images/morgan.png" alt="Morgan" />Tartan Attack! wurde 1995 von Kentigern Ridell gegründet. Unser bekanntestes Produkt ist das legendäre Spiel Angriff der Killer-Tartans.  </li>
+            <li><a class="foundTartan" id="found-attack" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+
+         <li id="vendor-laing"><h3>C180</h3>
+           <img src="images/napier.png" alt="Napier" />
+          <p><strong>Laing Security</strong></p>
+          <p>Kategorie: <strong>Software-Entwicklung</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>2</strong></p>
+            <ul id="laing" class="details">
+            <li><strong>Laing Security</strong></li>
+            <li>Halle <strong>2</strong>, Stand <strong>C180</strong></li>
+            <li><img src="images/napier.png" alt="Napier" />Laing Security wurde von anerkannten und erfolgreichen Sicherheitsexperten gegründet und bietet Beratung in Datensicherheit und Workshops zur angewandten Anwendungssicherheit. Wir bieten strategischen und technischen Rat für Risikoverwaltung und Regeltreue.</li>
+            <li><a class="foundTartan" id="found-laing" data-role="button">I found it!</a></li>
+            </ul>
+          </li>
+
+          
+          <li id="vendor-nasmyth"><h3>C420</h3>
+            <img src="images/ramsay.png" alt="Ramsay" />
+          <p><strong>Nasmyth Weltweit</strong></p>
+          <p>Kategorie: <strong>Software-Entwicklung</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>3</strong></p>
+            <ul id="nasmyth" class="details">
+            <li><strong>Nasmyth Weltweit</strong></li>
+            <li>Halle <strong>3</strong>, Stand <strong>C420</strong></li>
+            <li><img src="images/ramsay.png" alt="Ramsay" />Nasmyth Weltweit (NW) ist führende unabhängige Integrator von Sicherheitslösungen für Unternehmen. Das Unternehmen wurde vor über 60 Jahren in Edinburgh gegründet und bietet Sicherheitsdienste für führende Organisationen insbesondere für landesweite und örtliche Regierungsstellen wie im Gesundheitsektor.</li>
+            <li><a class="foundTartan" id="found-nasmyth" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+          
+          <li id="vendor-whole-haggis"><h3>C120</h3>
+            <img src="images/stuart_galloway.png" alt="Stuart of Galloway" />
+          <p><strong>Gebrüder Haggis</strong></p>
+          <p>Kategorie: <strong>Nahrung und Genussmittel</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>2</strong></p>
+            <ul id="whole-haggis" class="details">
+            <li><strong>Gebrüder Haggis</strong></li>
+            <li>Halle <strong>2</strong>, Stand <strong>C120</strong></li>
+            <li><img src="images/stuart_galloway.png" alt="Stuart of Galloway" />Die Gebrüder Haggis gehören zu den 75 größten Lebensmittelketten in Schottland und sind Schottlands größter unabhängiger Lebensmittelhändler.</li>
+            <li><a class="foundTartan" id="found-whole-haggis" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+          
+          <li id="vendor-greyfriar"><h3>C320</h3>
+            <img src="images/sutherland.png" alt="Sutherland" />
+          <p><strong>Barbier zum Franziskaner</strong></p>
+          <p>Kategorie: <strong>Hygiene</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>1</strong></p>
+            <ul id="greyfriar" class="details">
+            <li><strong>Barbier zum Franziskaner</strong></li>
+            <li>Halle <strong>1</strong>, Stand <strong>C320</strong></li>
+            <li><img src="images/sutherland.png" alt="Sutherland" />Wir pflegen Edinburghs Häupter seit 1872.</li>
+            <li><a class="foundTartan" id="found-greyfriar" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+                   
+        <li id="vendor-bagpipes"><h3>C350</h3>
+        <img src="images/taylor.png" alt="Taylor" />
+          <p><strong>Bagpipes R Us</strong></p>
+          <p>Kategorie: <strong>Kultur</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>4</strong></p>
+            <ul id="bagpipes" class="details">
+            <li><strong>Bagpipes R Us</strong></li>
+            <li>Halle <strong>4</strong>, Stand <strong>C350</strong></li>
+            <li><img src="images/taylor.png" alt="Taylor" />Bagpipes ‘r’ Us besteht seit Januar 2004. Wir verkaufen nur Instrumente, die wir auch selber spielen würden. </li>
+            <li><a class="foundTartan" id="found-bagpipes" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+                            
+        <li id="vendor-kingdom-kilts"><h3>C240</h3>
+        <img src="images/wallace.png" alt="Wallace" />
+          <p><strong>Königreich der Kilts</strong></p>
+          <p>Kategorie: <strong>Bekleidung</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>2</strong></p>
+            <ul id="kingdom-kilts" class="details">
+            <li><strong>Königreich der Kilts</strong></li>
+            <li>Halle <strong>2</strong>, Stand <strong>C240</strong></li>
+            <li><img src="images/wallace.png" alt="Wallace" />Wir führen die edelsten Kilts von ganz Schottland. Unsere Kilts werden von Stars und Politikern getragen und inspirierten sogar Jean Paul Gaultiers berühmte Schottische Kollektion von 2001. </li>
+            <li><a class="foundTartan" id="found-kingdom-kilts" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+      
+        <li id="vendor-piping-hot"><h3>C140</h3>
+        <img src="images/watson.png" alt="Watson" />
+          <p><strong>Dudelsack dudeln</strong></p>
+          <p>Kategorie: <strong>Kultur</strong></p>
+          
+          <p class="ui-li-aside">Halle <strong>3</strong></p>
+            <ul id="piping-hot" class="details">
+            <li><strong>Dudelsack dudeln</strong></li>
+            <li>Halle <strong>3</strong>, Stand <strong>C140</strong></li>
+            <li><img src="images/watson.png" alt="Watson" />Jahrhunderte lang kam der Dudelsack zum Einsatz, um Kriegern Mut einzuflößen, Hochzeiten zu feiern und Ereignisse jeglicher Natur das Besondere zu verleihen. Lernen Sie das Dudeln von den besten Lehrern Schottlands. Anfänger willkommen! </li>
+            <li><a class="foundTartan" id="found-piping-hot" data-role="button">Gefunden!</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div> <!-- /content -->
+    </div> <!-- /page -->
+
+  </body>
+</html>

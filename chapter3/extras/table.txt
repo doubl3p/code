@@ -1,0 +1,44 @@
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Informationen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td><p>Nachricht<br />
+      Feb 3 8:54PM EST</p>
+    </td>
+    <td><p><a href="#">Materialanforderung #493-C4 genehmigt</a><br />
+    Hi, Jess, gute Nachrichten. Wir konnten die von Dir angeforderten Flaschen auftreiben …</p></td>
+    </tr>
+  
+    <tr>
+    <td><p>Nachricht<br />
+    Feb 3 1:47PM EST</p></td>
+    <td><p><a href="#">Materialanforderung #493-C4 empfangen</a><br />
+    Dies ist eine automatisch generierte Nachricht: Ihre Materialanforderung ist eingegangen und wird bearbeitet …</p></td>
+    </tr>
+    
+    <tr>
+    <td><p>Einsatzplan<br />
+    Feb 3 8:22AM EST</p></td>
+    <td><p><a href="#">Reise 39924 LAX -> DAC genehmigt</a><br />
+    Ihr Reiseplan für den Einsatz: "Bangladesch-Flut-Aktion" wurde genehmigt. Ihr Kalender wurde entsprechend aktualisiert …</p></td>
+    </tr>
+    
+    <tr>
+    <td><p>Personalplan<br />
+    Feb 2 9:23PM EST</p></td>
+    <td><p><a href="#">Re: Personalbestätigung 03/05 - 03/15</a><br />
+    Jessica, vielen Dank, dass Sie sich im Hinblick auf diese Operation derart engagieren! Vermutlich wird auch Dr. Madling teilnehmen und …</p>
+    </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2"><div class="morelink"><p><a href="#">Mehr &gt;&gt;</p></a></div></td>
+    </tr>
+    
+  </tbody>
+</table>

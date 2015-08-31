@@ -1,0 +1,23 @@
+<?php
+ini_set('display_errors', 'on');
+error_reporting(E_ALL);
+
+/* Wichtig: Sie müssen diese beiden Pfade anpassen */
+/* WURFL_DIR muss auf das WURFL-Installationsverzeichnis zeigen. */
+define("WURFL_DIR", '/path/to/WURFL/');
+/* RESOURCES_DIR muss auf das resources-Verzeichnis zeigen. */
+define("RESOURCES_DIR", '/path/to/WURFL/resources/');
+
+$app_path         = WURFL_DIR . 'Application.php';
+$wurflConfigFile  = RESOURCES_DIR . 'wurfl-config.xml';
+
+if (!file_exists($app_path)) {
+  print '<h2>Problem!</h2> <p>WURFL sucht hier nach der Datei "Application.php" :<br /><code>' . $app_path
+    . '"</code><br />Leider kann es sie nicht finden. Überprü†en Sie den Pfad für "WURFL_DIR" in config.php</p>';
+}
+if (!file_exists($wurflConfigFile)) {
+  print '<h2>Problem!</h2> <p>WURFL sucht hier nach der Datei "wurfl-config.xml":<br /><code>' . $wurflConfigFile
+    . '"</code><br />Leider kann es sie nicht finden. Überprüfen Sie den Pfad für "RESOURCES_DIR" in config.php</p>';
+}
+require_once($app_path);
+?>
